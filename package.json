@@ -1,7 +1,7 @@
 {
     "name": "bg-ui-font-sizer",
     "main": "./lib/bg-ui-font-sizer",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "description": "Zoom in/out of Tree-view and Editor Tabs by changing their font size.",
     "keywords": [
         "font",
