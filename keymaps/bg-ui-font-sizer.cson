@@ -1,0 +1,30 @@
+# by adding shift and alt to the keystrokes that typically zoom in/out, we open the modal dialog
+# note that these are shift keystrokes because _ and + are shift characters on their keys
+'.platform-linux atom-workspace':
+  'ctrl-alt-_':   'bg-tabs:toggle-size-dialog'
+  'ctrl-alt-+':   'bg-tabs:toggle-size-dialog'
+
+# once the modal dialog is open, we can control the keyboard without risk keystroke conflict. (so these are aways safe)
+".bg-ui-font-sizer-dialog":
+  'ctrl-+':     'bg-tabs:increase-font-size'
+  'ctrl-=':     'bg-tabs:increase-font-size'
+  'ctrl-_':     'bg-tabs:decrease-font-size'
+  'ctrl--':     'bg-tabs:decrease-font-size'
+  'ctrl-down':  'bg-tabs:increase-line-height'
+  'ctrl-up':    'bg-tabs:decrease-line-height'
+  'ctrl-0':     'bg-tabs:reset-font-size'
+  'ctrl-)':     'bg-tabs:reset-font-size'
+  'escape':     'bg-tabs:toggle-size-dialog'
+  'tab':        'bg-tabs:size-dialog-next'
+  'shift-tab':  'bg-tabs:size-dialog-previous'
+
+# add context sensitive zoom to tree-view. By default, Atom will zoom the text editor with ctrl-+/- even when the focus is
+# in the tree view. This seems like a safe change because I think that it makes it more intuitive to zoom the thing where your
+# focus is.  ctrl-up/down are also mapped for to vertically squeeze and expand the tree items (line height adjustment). 
+# LMK by creating an issue if this caused problems for you. I'd like to know.
+'.platform-linux .tree-view':
+  'ctrl-0':     'bg-tree-view:reset-font-size'
+  'ctrl--':     'bg-tree-view:decrease-font-size'
+  'ctrl-=':     'bg-tree-view:increase-font-size'
+  'ctrl-up':    'bg-tree-view:decrease-line-height'
+  'ctrl-down':  'bg-tree-view:increase-line-height'

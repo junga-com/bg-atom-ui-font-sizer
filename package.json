@@ -2,23 +2,32 @@
     "name": "bg-ui-font-sizer",
     "main": "./lib/bg-ui-font-sizer",
     "version": "0.0.0",
-    "description": "A short description of your package",
+    "description": "Zoom in/out of Tree-view and Editor Tabs by changing their font size.",
     "keywords": [
         "font",
         "size",
         "ui",
         "zoom",
         "unzoom",
-        "tree-view"
+        "tree-view",
+        "tabs"
     ],
-    "repository": "https://github.com/atom/bg-atom-ui-font-sizer",
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/junga-com/bg-atom-ui-font-sizer.git"
+    },
+    "author": "Robert E. Griffith <npmjs@junga.com>",
     "license": "MIT",
+    "bugs": {
+      "url": "https://github.com/junga-com/bg-atom-ui-font-sizer/issues"
+    },
+    "homepage": "https://github.com/junga-com/bg-atom-ui-font-sizer#readme",
+    "dependencies": {
+        "bg-atom-utils": "^0.0.0",
+        "bg-atom-redom-ui": "^0.0.0",
+        "redom": "^3.24.2"
+    },
     "engines": {
         "atom": ">=1.0.0 <2.0.0"
-    },
-    "dependencies": {
-        "bg-atom-utils": "file:../bg-atom-utils",
-        "bg-atom-redom-ui": "file:../bg-atom-redom-ui",
-        "redom": "^3.24.2"
     }
 }

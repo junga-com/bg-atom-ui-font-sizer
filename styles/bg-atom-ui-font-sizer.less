@@ -4,5 +4,106 @@
 // for a full listing of what's available.
 @import "ui-variables";
 
-.bg-atom-ui-font-sizer {
+.modal.bg-ui-font-sizer-dialog {
+	top: 200px;
+	// top: 800px;
+	// left:300px;
+	width: fit-content;
+
+	.atom-panel.bg-ui-font-sizer-dialog {
+		width: fit-content;
+		display: grid;
+		grid: "heading heading"  3em
+			  "left      right"
+			  / 25em      auto;
+
+		.panel-heading {
+			grid-area: heading;
+			text-align: center;
+		}
+
+		.inset-panel {
+			padding: 1em;
+		}
+
+		.leftSide {
+			grid-area: left;
+
+			display: grid;
+			grid: "left   center   right"  auto
+				  "left   bottom   right"
+				  /  3em     auto     3em;
+
+			* {
+				height:auto;
+			}
+
+			.left {
+				grid-area: left;
+				p {writing-mode: vertical-lr;}
+			}
+			.center {
+				grid-area: center;
+				div:first-child {
+					font-size: 130%;
+				}
+				kbd.key-binding {
+					font-size: 80%;
+					margin-right: 0.7em
+				}
+			}
+			.right {
+				grid-area: right;
+				p {writing-mode: vertical-lr;}
+			}
+			.bottom {
+				grid-area: bottom;
+			}
+		}
+
+
+		.rightSide {
+			grid-area: right;
+			display: grid;
+			grid: "big   short"   auto
+				  "small  tall"   auto
+			      "reset reset"   auto
+				  "....   ...."   0.9em
+				  " esc   esc "   auto
+				  / 50%   auto;
+			padding-right: 1.5em;
+
+			button {
+				display: flex;
+				flex-flow: row;
+				width:  auto;
+				height: auto;
+				padding-left: 0.3em;
+				margin-bottom: 0.5em;
+				text-align: left;
+				kbd {
+					margin-left: auto;
+					margin-right: 1em;
+				}
+				span {
+					width: 70%
+				}
+			}
+
+			.escape      {grid-area: esc;}
+			.reset       {grid-area: reset;}
+			.fontBigger  {grid-area: big;}
+			.fontSmaller {grid-area: small;}
+			.lineShorter {grid-area: short;}
+			.lineTaller  {grid-area: tall;}
+
+
+			.fontBigger, .fontSmaller {
+				width: 11em;
+			}
+			.lineShorter, .lineTaller {
+				width: 12em;
+			}
+		}
+	}
 }
