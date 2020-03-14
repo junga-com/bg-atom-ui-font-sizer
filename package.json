@@ -23,8 +23,8 @@
     },
     "homepage": "https://github.com/junga-com/bg-atom-ui-font-sizer#readme",
     "dependencies": {
-        "bg-atom-utils": "^0.0.0",
-        "bg-atom-redom-ui": "^0.0.0",
+        "bg-atom-utils": "^1.1.0",
+        "bg-atom-redom-ui": "^1.1.0",
         "redom": "^3.24.2"
     },
     "engines": {
