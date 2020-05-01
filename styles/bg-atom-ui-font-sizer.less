@@ -10,16 +10,21 @@
 	// left:300px;
 	width: fit-content;
 
-	.atom-panel.bg-ui-font-sizer-dialog {
+	atom-panel.bg-ui-font-sizer-dialog {
 		width: fit-content;
 		display: grid;
-		grid: "heading heading"  3em
+		grid: "heading heading"  auto
 			  "left      right"
 			  / 25em      auto;
 
 		.panel-heading {
 			grid-area: heading;
 			text-align: center;
+			color: @text-color-highlight;
+			kbd.key-binding {
+				font-size: 60%;
+				background-color: inherit;
+			}
 		}
 
 		.inset-panel {

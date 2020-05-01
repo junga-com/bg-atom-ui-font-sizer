@@ -1,4 +1,4 @@
-# by adding shift and alt to the keystrokes that typically zoom in/out, we open the modal dialog
+# to open the modal dialog, we add shift and alt to the keystrokes that typically zoom in/out
 # note that these are shift keystrokes because _ and + are shift characters on their keys
 '.platform-linux atom-workspace':
   'ctrl-alt-_':   'bg-tabs:toggle-size-dialog'
@@ -15,8 +15,12 @@
   'ctrl-0':     'bg-tabs:reset-font-size'
   'ctrl-)':     'bg-tabs:reset-font-size'
   'escape':     'bg-tabs:toggle-size-dialog'
-  'tab':        'bg-tabs:size-dialog-next'
-  'shift-tab':  'bg-tabs:size-dialog-previous'
+  'tab':       'bg-tabs:size-dialog-next'
+  'shift-tab': 'bg-tabs:size-dialog-previous'
+  'left':   'bg-tabs:size-dialog-left'
+  'right':  'bg-tabs:size-dialog-right'
+  'up':     'bg-tabs:size-dialog-up'
+  'down':   'bg-tabs:size-dialog-down'
 
 # add context sensitive zoom to tree-view. By default, Atom will zoom the text editor with ctrl-+/- even when the focus is
 # in the tree view. This seems like a safe change because I think that it makes it more intuitive to zoom the thing where your
