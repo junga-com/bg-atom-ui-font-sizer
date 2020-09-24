@@ -116,4 +116,14 @@ one of the other package commands), this package will be dormant and not mess wi
 
 #### Hacking Tip
 
-If you want to play around with this package in ways that are not exposed through the commands, open devtools console (window:toggle-dev-tools) and explore the bgPlugins... global variable. Start typing the `bgPlugin[...` and use the autocomplete to select this package name. If you hit enter on the completed `bgPlugins['packageName']` it shows you a reference to the plugin object that you can expand to explore the current state of the plugin. You can autocomplete further to navigate to the sub-objects and invoke methods and see what they do.
+If you want to play around with this package in ways that are not exposed through the commands, open devtools console (window:toggle-dev-tools) and explore the bg... global variable. Start typing the `bg...` to see what mechanisms are available to explore.
+
+  * bg.BGAtomPlugins.logStatus() : list the packages that use the BGPlugin style
+  * bg.BGAtomPlugins.get(pkgName) : get a reference to a package plugin instance to explore
+  * bg.PolyfillObjectMixin.logStatus() : list the Atom polyfills that are installed (these add features to Atom API)
+
+When you complete a command that returns an object, it will be logged in the console where you can expand it to explore its current state. You can autocomplete further to navigate to the sub-objects and if you assign an object to a variable in the console, you can invoke its methods and see what they do.
+```javascript
+> pkg = bg.BGAtomPlugin.get('<packageName>')
+> pkg.addCommand(...)
+```
