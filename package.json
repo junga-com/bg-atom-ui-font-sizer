@@ -16,7 +16,7 @@
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/junga-com/bg-atom-ui-font-sizer.git"
+        "url": "https://github.com/junga-com/bg-atom-ui-font-sizer"
     },
     "author": "Robert E. Griffith <npmjs@junga.com>",
     "license": "MIT",
@@ -25,10 +25,9 @@
     },
     "homepage": "https://github.com/junga-com/bg-atom-ui-font-sizer#readme",
     "dependencies": {
-        "bg-atom-redom-ui": "^2.2.0",
-        "bg-atom-utils": "^2.1.0",
-        "esm": "^3.2.25",
-        "redom": "^3.24.2"
+        "bg-atom-utils": "^2.2.2",
+        "bg-dom": "^2.3.7",
+        "esm": "^3.2.25"
     },
     "engines": {
         "atom": ">=1.0.0 <2.0.0"

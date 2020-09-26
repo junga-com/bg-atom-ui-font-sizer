@@ -1,8 +1,16 @@
 # bg-ui-font-sizer package
 
+#### 2020-09 Update
+This project uses the bg-atom-utils npm package which now installs a number of extensions to the atom.* API objects. I think that they are
+unlikely to cause problems, but if you experience any, please take the time to create an issue on this package to let me know. I am very interested in addressing any issues quickly.
+
+#### Summary
+
 Change the size of fonts in Atom UI.
 
-This package adds commands that dynamically change font size of the bundled Tree-view and the Pane Item Tab controls that appear on each of the WorkspaceCenter, LeftDock, RightDock, and BottomDock areas. This is particularly useful for the tree-view where it has the effect of zooming in and out to see your project tree at different levels. I find this works well in conjunction with the bg-pane-navigation package.
+This package adds commands that dynamically change font size of the bundled Tree-view and the Pane Item Tab controls that appear on each of the WorkspaceCenter, LeftDock, RightDock, and BottomDock areas. The effect of changing these font sizes is to zoom in and out.
+
+This is particularly useful for the tree-view where you can zoom in or out to see your project tree at different levels. I find this works well in conjunction with the bg-pane-navigation package so that I can navigate around the workspace with the keyboard and zoom in/out of where ever I am at with the keyboard.
 
 Note that some themes, such as the dark themes bundled with Atom have a configuration to set the UI font size. If you just want to
 increase the readability on a high resolution monitor those themes offer a good solution. Aside from addressing that issue on themes
@@ -22,6 +30,8 @@ have a modal dialog that can be opened to enter a mode to adjust the tabs. This 
 keystrokes for all the tabs in any context you could adjust them in.
 
 | Command                            | KeyMap                       | Description
+|---                                 |---                           |---
+|'bg-ui-font-sizer:run-tutorial'     |                              | Start the tutorial for this package again
 |---                                 |---                           |---
 |'bg-tree-view:decrease-font-size'   | .tree-view: 'ctrl--':        | zoom tree-view out
 |'bg-tree-view:increase-font-size'   | .tree-view: 'ctrl-=':        | zoom tree-view in
