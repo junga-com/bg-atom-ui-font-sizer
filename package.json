@@ -2,7 +2,7 @@
     "name": "bg-ui-font-sizer",
     "main": "esmToCjsPkgBridge.js",
     "module": "./lib/bg-ui-font-sizer",
-    "version": "2.1.2",
+    "version": "2.2.0",
     "description": "Zoom in/out of Tree-view and Editor Tabs by changing their font size.",
     "keywords": [
         "font",
